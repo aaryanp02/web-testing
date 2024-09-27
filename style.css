@@ -1,0 +1,228 @@
+/* General reset and styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #2e8b57;
+  padding: 20px;
+  text-align: center;
+}
+
+header .logo {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* This will allow better wrapping for smaller screens */
+}
+
+header nav ul li {
+  margin: 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Hero section */
+.hero {
+  background: url('https://www.fairtrade.org.uk/wp-content/uploads/2024/03/buying-flowers-banner.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #2e8b57;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Features section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #fff;
+  flex-wrap: wrap; /* Wrap features on smaller screens */
+}
+
+.feature {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.feature h3 {
+  color: #2e8b57;
+  margin-bottom: 10px;
+}
+
+/* About Us section */
+.about-us {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Products section */
+.products {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Allow product grid to adjust on smaller screens */
+}
+
+.product {
+  flex-basis: 100%;
+  max-width: 300px; /* Limit width on smaller screens */
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin: 20px 0 10px;
+}
+
+.product .price {
+  font-size: 1.2rem;
+  color: #2e8b57;
+}
+
+/* Sustainability section */
+.sustainability {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Contact Us section */
+.contact-us {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-us form input, .contact-us form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-us form button {
+  background-color: #2e8b57;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #2e8b57;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+footer .footer-links a, footer .social-media a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  header .logo {
+    font-size: 1.5rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .features {
+    flex-direction: column;
+  }
+
+  .feature {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .product-grid {
+    gap: 10px;
+  }
+  
+  .cta-button {
+    padding: 8px 16px;
+  }
+}
